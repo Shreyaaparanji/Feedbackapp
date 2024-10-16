@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mediafiles",
-    "slug": "mediafiles",
+    "name": "FeedbackApp",
+    "slug": "FeedbackApp",
     "plugins": [
       [
         "expo-image-picker",
@@ -12,7 +12,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/feedback.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -26,10 +26,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.srinidhi.aparanji.FeedbackApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "34aa5215-1aa0-426e-850b-bd54391cf94e"
+      }
     }
   }
 }

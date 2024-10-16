@@ -48,7 +48,7 @@ function FeedbacksTable({ navigation }) {
   const renderItem = ({ item }) => (
     <View style={styles.row}>
       <TouchableOpacity style={[styles.cell, styles.cellTouchable]} onPress={() => handlePress(item.id)}>
-        <Text style={styles.cellText}>{item.id}</Text>
+        <Text style={styles.cellText}>More Info on {item.name}</Text>
       </TouchableOpacity>
       <Text style={[styles.cell, styles.cellText]}>{item.name}</Text>
       <Text style={[styles.cell, styles.cellText]}>{item.description}</Text>
@@ -98,7 +98,7 @@ function FeedbacksTable({ navigation }) {
         <Icon name="download" size={24} color="#000" />
       </TouchableOpacity>
       <View style={styles.header}>
-        <Text style={[styles.headerText, styles.cellHeader]}>Visitor ID</Text>
+        <Text style={[styles.headerText, styles.cellHeader]}>Visitors Details</Text>
         <Text style={[styles.headerText, styles.cellHeader]}>Visitor Name</Text>
         <Text style={[styles.headerText, styles.cellHeader]}>Feedback</Text>
       </View>
